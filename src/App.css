@@ -224,6 +224,139 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
 
+/*Banner styles*/
+
+.banner {
+    margin-top: 0;
+    padding: 180px 0 100px 0;
+    background-image: url('./assets/img/banner-bg-3.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    font-size: 20px;
+    background: linear-gradient(90.21deg,rgba(0, 149, 218, 0.5) -5.91%,rgba(255, 143, 14, 0.5) 111.58%);
+    display: inline-block;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner h1{
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    color: #ff8f0e;
+}
+
+.banner p {
+    color: #b8b8b8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 100%;
+    text-align: justify;
+    color: #fff;
+}
+
+.banner .wrap{
+    font-size: 60px;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+.banner button {
+    color: #0095da;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.banner button:hover svg {
+    margin-left: 25px;
+}
+
+.banner img {
+    animation: updown 3s linear infinite;
+
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+  
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+/* Skills */
+
+.skill {
+    padding: 0 0 50px 0;
+    position: relative;
+}
+
+.skill-bx{
+    background-color: #014c81;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+}
+
+.skill .title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+
+.skill-slider{
+    width: 100%;
+    position: relative;
+    
+}
+
+.skill img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.skill h5{
+    font-size: 22px;
+    font-weight: 700;
+}
+
 @media (max-width: 991px) { 
     .social-icon a {
         display: none;
@@ -232,17 +365,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     .navbar-text button {
         display: none;
     }
-}
 
-@media (max-width: 991px) { 
+    .navbar-nav{
+        align-items: center;
+    }
     nav.navbar a.navbar-brand{
         width: 12%;
     }
+    .banner-img img{
+        margin-top: 130px;
+    }
+
+    .banner .wrap{
+        font-size: 40px;
+    }
+
+    .banner h1{
+        font-size: 55px;
+    }
 }
 
-@media (max-width: 761px) { 
+@media (max-width: 767px) { 
     nav.navbar a.navbar-brand{
         width: 15%;
+    }
+
+    .banner button {
+        margin-bottom: 20px;
+    }
+
+    .banner-img img{
+        margin-top: 0px;
+    }
+
+    .banner .wrap{
+        font-size: 65px;
+    }
+
+    .banner h1{
+        font-size: 65px;
     }
 }
 
@@ -250,10 +411,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     nav.navbar a.navbar-brand{
         width: 18%;
     }
+
+    .banner button {
+        margin-bottom: 20px;
+    }
+
+    .banner .wrap{
+        font-size: 50px;
+    }
+
+    .banner h1{
+        font-size: 65px;
+    }
 }
 
 @media (max-width: 412px) { 
     nav.navbar a.navbar-brand{
         width: 21%;
+    }
+    .banner button {
+        margin-bottom: 20px;
+    }
+
+    .banner .wrap{
+        font-size: 45px;
+    }
+
+    .banner h1{
+        font-size: 60px;
     }
 }

@@ -53,9 +53,9 @@ export default function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href="https://acortar.link/5fUEKx"><img src={NavIcon1} alt=""/></a>
-                <a href="https://acortar.link/Upel6u"><img src={NavIcon2} alt=""/></a>
-                <a href="https://acortar.link/pdQ9Si"><img src={NavIcon3} alt=""/></a>
+                <a href="https://acortar.link/5fUEKx"><img src={NavIcon1} alt="social-networks"/></a>
+                <a href="https://acortar.link/Upel6u"><img src={NavIcon2} alt="social-networks"/></a>
+                <a href="https://acortar.link/pdQ9Si"><img src={NavIcon3} alt="social-networks"/></a>
             </div>
             <button className="vvd" onClick={()=>console.log("Conectando")}><span>Let's Connect</span></button>
           </span>
