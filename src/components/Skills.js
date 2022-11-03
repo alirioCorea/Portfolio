@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import logos from "../lib/logos";
-import colorSharp from "../assets/img/color-sharp.png";
+import colorSharp from "../assets/img/color-sharp3.png";
 
 export default function Skills() {
   const responsive = {
@@ -32,10 +32,10 @@ export default function Skills() {
                 <Col>
                     <div className="skill-bx">
                         <h2 className="title">My Tech Stack</h2>
-                        <Carousel responsive={responsive} infinite={true} className='skill-slider'>
+                        <Carousel responsive={responsive} infinite={true} className='skill-slider'  autoPlaySpeed={3000} autoPlay={true}>
                         {
-                            logos.map((logo) => (
-                                <div className="skill-item">
+                            logos.map((logo, index) => (
+                                <div key={index} className="skill-item">
                                     <img src={logo.logo} alt="Icon-tech"/>
                                     <h5>{logo.name}</h5>
                                 </div>
@@ -46,7 +46,7 @@ export default function Skills() {
                 </Col>
             </Row>
         </Container>
-        <img className="background-image-left" src={colorSharp} />
+        <img className="background-image-left" src={colorSharp} alt="background-skills"/>
     </section>
   )
 }

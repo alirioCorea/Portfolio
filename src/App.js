@@ -1,6 +1,7 @@
 import './App.css';
 import Banner from './components/Banner';
 import BavBar from './components/NavBar';
+import Projetcs from './components/Projetcs';
 import Skills from './components/Skills';
 
 
@@ -10,6 +11,7 @@ function App() {
       <BavBar />
       <Banner />
       <Skills />
+      <Projetcs />
     </div>  
   );
 }
