@@ -16,7 +16,7 @@ export default function Projetcs() {
                         I always want to create new projects when I learn new technology for that reason I have coded differents ones like these
                     </p>
                     <Tab.Container id='projects-tabs' defaultActiveKey={'first'}>
-                        <Nav variant='pills' defaultActiveKey="/home">
+                        <Nav variant='pills' className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                             <Nav.Item>
                                 <Nav.Link eventKey={"first"}>Tab One</Nav.Link>
                             </Nav.Item>

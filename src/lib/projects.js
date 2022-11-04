@@ -18,21 +18,6 @@ const projects = [
       description: "Design & Development",
       imgUrl: projImg3,
     },
-    {
-        title: "Business administration",
-        description: "Design & Development",
-        imgUrl: projImg1,
-    },
-    {
-        title: "Learning Project",
-        description: "Design & Development",
-        imgUrl: projImg2,
-    },
-    {
-        title: "Video Games",
-        description: "Design & Development",
-        imgUrl: projImg3,
-    },
   ];
 
   export default projects;
