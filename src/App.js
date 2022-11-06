@@ -3,7 +3,7 @@ import Banner from './components/Banner';
 import BavBar from './components/NavBar';
 import Projetcs from './components/Projetcs';
 import Skills from './components/Skills';
-
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Banner />
       <Skills />
       <Projetcs />
+      <Contact />
     </div>  
   );
 }

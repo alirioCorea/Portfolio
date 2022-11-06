@@ -32,7 +32,7 @@ export default function Skills() {
                 <Col>
                     <div className="skill-bx">
                         <h2 className="title">My Tech Stack</h2>
-                        <Carousel responsive={responsive} infinite={true} className='skill-slider'  autoPlaySpeed={3000} autoPlay={true}>
+                        <Carousel responsive={responsive} infinite={true} className='skill-slider'  autoPlaySpeed={2000} autoPlay={true}>
                         {
                             logos.map((logo, index) => (
                                 <div key={index} className="skill-item">
